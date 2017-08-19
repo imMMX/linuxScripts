@@ -2,7 +2,7 @@
 apt update -y &&\
 apt install -y sudo &&\
 sudo apt-get install -y git wget curl zsh vim software-properties-common &&\
-ssh-keygen -f file.rsa -t rsa -N '' &&\
+ssh-keygen -f /root/.ssh/id_rsa -t rsa -N '' &&\
 touch /root/.ssh/authorized_keys &&\
 curl https://raw.githubusercontent.com/imMMX/myPublicKey/master/authorized_keys > /root/.ssh/authorized_keys &&\
 zsh --version &&\
